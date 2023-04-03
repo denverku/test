@@ -1,8 +1,11 @@
+  const Xvfb = require('xvfb');
   const puppeteer = require('puppeteer-extra')
   const cheerio = require('cheerio')
   const StealthPlugin = require('puppeteer-extra-plugin-stealth');
   const fs = require('fs')
   const tesseract = require("node-tesseract-ocr")
+  const xvfb = new Xvfb();
+  xvfb.startSync();
   puppeteer.use(StealthPlugin())
 
 
