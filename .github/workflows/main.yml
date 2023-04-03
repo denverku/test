@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
+      - run: npm install xvfb
       - run: npm install puppeteer-extra --save
       - run: npm install cheerio --save
       - run: export DISPLAY=:0
