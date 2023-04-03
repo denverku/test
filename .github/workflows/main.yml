@@ -14,10 +14,9 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm install get-json --save
-      - run: npm install jsdom --save
-      - run: npm install axios --save
-      - run: npm install firebase --save
+      - run: npm install puppeteer-extra --save
+      - run: npm install cheerio --save
+      - run: export DISPLAY=:0
       - run: node bot.js
 
   
